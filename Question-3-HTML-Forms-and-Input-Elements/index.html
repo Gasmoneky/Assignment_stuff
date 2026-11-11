@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>Riverside State University</h1>
+        <p>University Student Information Portal</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#registration">Student Registration</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="registration">
+            <h2>Student Registration Form</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="fullName">Full Name:</label><br>
+                    <input type="text" id="fullName" name="fullName" required>
+                </p>
+
+                <p>
+                    <label for="regNumber">Registration Number:</label><br>
+                    <input type="text" id="regNumber" name="regNumber" required>
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <label>
+                        <input type="radio" name="gender" value="male"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female"> Female
+                    </label>
+                </fieldset>
+
+                <p>
+                    <label for="programme">Academic Programme:</label><br>
+                    <select id="programme" name="programme" required>
+                        <option value="">-- Select a programme --</option>
+                        <option value="computer-science">Bachelor of Computer Science</option>
+                        <option value="business-administration">Bachelor of Business Administration</option>
+                        <option value="education">Bachelor of Education</option>
+                        <option value="nursing">Bachelor of Nursing</option>
+                    </select>
+                </p>
+
+                <p>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
